@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_200">#ff3346</color>
+    <color name="red_500">#eb001b</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="material_gray">#bdbdbd</color>
+    <color name="list">#0088cc</color>
+    <color name="accentcolor">#e5a82d</color>
+    <color name="colorPrimary">#E62E40</color>
+    <color name="shop_off_text_color">#333</color>
+    <color name="material_actionbar">#8D989E</color>
+
+
+</resources>

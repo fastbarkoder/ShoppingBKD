@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Add new item..."
+            android:maxLength="25"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/edittext"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:divider="@color/white">
+
+        </ListView>
+
+        <com.barkoder.BarkoderView
+            android:id="@+id/bkdView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginLeft="5dp"
+
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bkdinfo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/navigation_logo"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="BKD SHOOPING CARD"
+                android:textColor="#FFFF"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnNewLists"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_format_list_bulleted"
+                android:drawablePadding="16dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Lists"
+                android:textColor="#212121"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnsessions"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_currency_eur"
+                android:drawablePadding="16dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Sessions"
+                android:textColor="#212121"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnInformation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_rename_box"
+                android:drawablePadding="16dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Information"
+                android:textColor="#212121"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

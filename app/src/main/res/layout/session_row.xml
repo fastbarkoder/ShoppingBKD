@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="#FFF"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txt_invoiceList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List name"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/txt_invoice_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:foregroundGravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:src="@drawable/ic_delete"
+        android:text="time"
+        android:textColor="#333"
+        android:textSize="14sp" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_invoice_child"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="child"-->
+    <!--android:textColor="#333"-->
+    <!--android:textSize="14sp" />-->
+
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_invoiceList"
+        android:text="Date and Time: "
+        android:textColor="@color/material_gray"
+        android:textSize="14sp" />
+
+</RelativeLayout>

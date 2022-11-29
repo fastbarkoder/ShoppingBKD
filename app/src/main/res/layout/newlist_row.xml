@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRow"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/list_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_format_list_bulleted" />
+
+    <ImageView
+        android:id="@+id/deletelist"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/list_logo"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/editlist"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/list_logo"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/deletelist"
+        android:src="@drawable/ic_pencil" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@id/editlist"
+        android:layout_toRightOf="@id/list_logo"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:minHeight="60dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:duplicateParentState="true"
+            android:hint="Name"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

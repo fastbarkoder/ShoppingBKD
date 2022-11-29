@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_manage_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageListActivity">
+
+    <EditText
+        android:id="@+id/new_items"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Add new item"
+        android:maxLength="25"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/material_gray"
+        android:textSize="16sp" />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/new_items"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ListView
+            android:id="@+id/manage_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/new_items"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:divider="@color/material_gray">
+
+        </ListView>
+
+        <com.barkoder.BarkoderView
+            android:id="@+id/bkdView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:background="@color/accentcolor"
+            android:src="@drawable/ic_currency_eur"
+            android:visibility="gone"
+            app:backgroundTint="@color/accentcolor" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+

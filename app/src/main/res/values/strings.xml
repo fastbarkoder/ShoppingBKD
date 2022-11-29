@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ShoppingBKD</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+    <string name="navigation_drawer_open">Menu</string>
+    <string name="navigation_drawer_close">Default List</string>
+
+    <string name="start_scanning_info">Press scan button to start scanning</string>
+    <string name="result_type_title">Type:</string>
+    <string name="result_title">Result:</string>
+    <string name="result_extras_title">Extras:</string>
+</resources>
